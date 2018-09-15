@@ -13,3 +13,15 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-dev.com:7001/eureka/  #  wwwwwwww222
+---
+server:
+  port: 8202
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-test.com:7001/eureka/
+>>>>>>> 37d4e95a4c43f0f2aa228a3a8a86491fb016ec8f
